@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>sorry i cannot understand your accent :(</p>
+
+<form id="input">
+  over here! <input type="text" id="inputbox">
+</form>
+
+<button onclick="accent()">apply accent :o</button>
+
+<p id="output"></p>
+
+<script>
+function accent() {
+  var str = document.getElementById("inputbox").value;
+  var res = str.replace(" ", " *blows raspberry* ");
+  document.getElementById("output").innerHTML = res;
+}
+</script>
+
+</body>
+</html>

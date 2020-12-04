@@ -7,16 +7,16 @@
 <form id="input">
   over here! <input type="text" id="inputbox">
 </form>
-
 <button onclick="accent()">apply accent :o</button>
 
-<p id="output"></p>
+<!-- output location --> 
+<p id="output"></p> 
 
 <script>
 function accent() {
-  var str = document.getElementById("inputbox").value;
-  var res = str.replace(/ /g, " *blows raspberry* ");
-  document.getElementById("output").innerHTML = res;
+  var str = document.getElementById("inputbox").value;  // gathers value in the form above
+  var res = str.replace(/ /g, " *blows raspberry* ");   // `/ /g`replaces all spaces with desired string
+  document.getElementById("output").innerHTML = res;    // displays altered input text to the page
 }
 </script>
 
